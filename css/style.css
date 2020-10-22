@@ -1,0 +1,176 @@
+html {
+  font-size: 16px;
+}
+
+.selector {
+  text-shadow: 0 0 0 gray;
+  color: transparent !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none; // latest Opera versions support -webkit-
+  user-select: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+div.background-weather {
+  margin: 0 auto;
+  font-family: 'Roboto';
+  background-color: white;
+  color: white;
+  width: 50vw;
+  height: auto;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+main {
+  margin: 0px auto 50px auto;
+  text-align: center;
+  background-image: url('../bg-image.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  min-height: 75vh;
+  color: white;
+}
+
+h1 {
+  width: auto;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 50px;
+}
+
+h3#destination {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: Work Sans;
+  font-weight: 500;
+  line-height: 1.29;
+  color: #000;
+  padding-left: 5px
+}
+
+main p {
+  padding-top: 1rem;
+  color: black;
+  font-family: Work Sans;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.36;
+  text-align: left;
+  color: #4a4a4a;
+  padding-left: 5px;
+  text-align: center;
+}
+
+section#venues p {
+  padding: 0px;
+  line-height: 1;
+  color: black !important;
+  font-size: 1rem;
+}
+
+form {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+form button {
+  width: 25% !important;
+  height: 80% !important;
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+}
+
+body>main>form>div {
+  margin-top: 1rem;
+}
+
+input#city {
+  font-family: 'Roboto';
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  margin: 0px 10px 0px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+div.venue-container {
+  margin-top: 50px;
+  min-height: 320px;
+  background: white;
+  color: black !important;
+  width: 50vw;
+  padding: 30px;
+  font-family: 'Roboto';
+}
+
+section#venues {
+  background-color: white;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+div.venue {
+  background: #d5d5d5;
+  height: auto;
+  display: block;
+  background: #fff;
+  opacity: 0.75;
+  color: black;
+  padding: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  form {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .form-group {
+    flex-wrap: wrap;
+  }
+
+  input#city {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  form button {
+    width: 100% !important;
+  }
+
+  div.background-weather {
+    width: 75vw;
+  }
+
+  div.venue-container {
+    width: 75vw;
+  }
+}
